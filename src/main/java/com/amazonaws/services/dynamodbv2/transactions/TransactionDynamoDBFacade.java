@@ -456,4 +456,28 @@ public class TransactionDynamoDBFacade implements AmazonDynamoDB {
 		throw new UnsupportedOperationException("Use the underlying client instance instead");
 	}
 
+  @Override
+  public com.amazonaws.services.dynamodbv2.model.DescribeTimeToLiveResult describeTimeToLive(com.amazonaws.services.dynamodbv2.model.DescribeTimeToLiveRequest request) {
+		throw new UnsupportedOperationException("Use the underlying client instance instead");
+  }
+
+  @Override
+  public com.amazonaws.services.dynamodbv2.model.UpdateTimeToLiveResult updateTimeToLive(com.amazonaws.services.dynamodbv2.model.UpdateTimeToLiveRequest request) {
+		throw new UnsupportedOperationException("Use the underlying client instance instead");
+  }
+
+  @Override
+  public com.amazonaws.services.dynamodbv2.model.UntagResourceResult untagResource(com.amazonaws.services.dynamodbv2.model.UntagResourceRequest untagResourceRequest) {
+		throw new UnsupportedOperationException("Use the underlying client instance instead");
+  }
+
+  @Override
+  public com.amazonaws.services.dynamodbv2.model.TagResourceResult tagResource(com.amazonaws.services.dynamodbv2.model.TagResourceRequest tagResourceRequest) {
+		throw new UnsupportedOperationException("Use the underlying client instance instead");
+  }
+
+  @Override
+  public com.amazonaws.services.dynamodbv2.model.ListTagsOfResourceResult listTagsOfResource(com.amazonaws.services.dynamodbv2.model.ListTagsOfResourceRequest listTagsOfResourceRequest) {
+		throw new UnsupportedOperationException("Use the underlying client instance instead");
+  }
 }

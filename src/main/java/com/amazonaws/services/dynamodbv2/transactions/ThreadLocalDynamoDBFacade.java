@@ -1,16 +1,16 @@
 /**
  * Copyright 2014-2014 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  *
- * Licensed under the Amazon Software License (the "License"). 
- * You may not use this file except in compliance with the License. 
+ * Licensed under the Amazon Software License (the "License").
+ * You may not use this file except in compliance with the License.
  * A copy of the License is located at
  *
  *  http://aws.amazon.com/asl/
  *
- * or in the "license" file accompanying this file. This file is distributed 
- * on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, express 
- * or implied. See the License for the specific language governing permissions 
- * and limitations under the License. 
+ * or in the "license" file accompanying this file. This file is distributed
+ * on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, express
+ * or implied. See the License for the specific language governing permissions
+ * and limitations under the License.
  */
 package com.amazonaws.services.dynamodbv2.transactions;
 
@@ -293,4 +293,28 @@ public class ThreadLocalDynamoDBFacade implements AmazonDynamoDB {
 		return getBackend().waiters();
 	}
 
+  @Override
+  public com.amazonaws.services.dynamodbv2.model.UpdateTimeToLiveResult updateTimeToLive(com.amazonaws.services.dynamodbv2.model.UpdateTimeToLiveRequest request) {
+    return getBackend().updateTimeToLive(request);
+  }
+
+  @Override
+  public com.amazonaws.services.dynamodbv2.model.DescribeTimeToLiveResult describeTimeToLive(com.amazonaws.services.dynamodbv2.model.DescribeTimeToLiveRequest request) {
+    return getBackend().describeTimeToLive(request);
+  }
+
+  @Override
+  public com.amazonaws.services.dynamodbv2.model.UntagResourceResult untagResource(com.amazonaws.services.dynamodbv2.model.UntagResourceRequest untagResourceRequest) {
+    return getBackend().untagResource(untagResourceRequest);
+  }
+
+  @Override
+  public com.amazonaws.services.dynamodbv2.model.TagResourceResult tagResource(com.amazonaws.services.dynamodbv2.model.TagResourceRequest tagResourceRequest) {
+    return getBackend().tagResource(tagResourceRequest);
+  }
+
+  @Override
+  public com.amazonaws.services.dynamodbv2.model.ListTagsOfResourceResult listTagsOfResource(com.amazonaws.services.dynamodbv2.model.ListTagsOfResourceRequest listTagsOfResourceRequest) {
+    return getBackend().listTagsOfResource(listTagsOfResourceRequest);
+  }
 }
